@@ -44,6 +44,30 @@ public class PC_CharMove : MonoBehaviour {
             Jump();
         }
 
+        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        {
+            Jump();
+        }
+
+        //This code makes the char move from side to side
+        if (Input.GetKey (KeyCode.D))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+        }
+
     }
 
     public void Jump()
