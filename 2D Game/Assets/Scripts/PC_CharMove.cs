@@ -9,6 +9,7 @@ public class PC_CharMove : MonoBehaviour {
     //Player Movement Var
     public int MoveSpeed;
     public float JumpHeight;
+    private bool doubleJump;
 
     //Player grounded Variables
     //transforms is moving, like rotatio, scaling, to see if you are on the ground
@@ -19,6 +20,9 @@ public class PC_CharMove : MonoBehaviour {
     public LayerMask whatIsGround;
     //on ot off, true ot false
     public bool grounded;
+
+    //Non-Stick Player
+    private float moveVelocity;
 
 	// Use this for initialization
 	void Start () {
@@ -49,24 +53,48 @@ public class PC_CharMove : MonoBehaviour {
             Jump();
         }
 
+        //double jump
+        if (grounded)
+        {
+            doubleJump = false;
+        }
+
+        if (Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !grounded)
+        {
+            Jump();
+            doubleJump = true;
+        }
+
         //This code makes the char move from side to side
         if (Input.GetKey (KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = MoveSpeed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = -MoveSpeed;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = MoveSpeed;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            moveVelocity = -MoveSpeed;
         }
+
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+
+
+        //Non-Stick Player
+        //changing this means it will go a constant x to the right
+        moveVelocity = 0f;
 
     }
 
