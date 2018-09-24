@@ -26,8 +26,9 @@ public class ScoreManager : MonoBehaviour {
         {
             Score = 0;
 
-            ScoreText.text = " " + Score;
         }	
+
+        ScoreText.text = " " + Score;
 	}
 
     //will add points o score
@@ -36,8 +37,8 @@ public class ScoreManager : MonoBehaviour {
         Score += pointsToAdd;
     }
 
-    public static void Reset ()
-    {
-        Score = 0;
-    }
+    //public static void Reset ()
+    //{
+    //    Score = 0;
+    //}
 }
