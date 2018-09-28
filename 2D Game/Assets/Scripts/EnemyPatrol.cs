@@ -24,7 +24,7 @@ public class EnemyPatrol : MonoBehaviour {
     {
         NotAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, WallCheckRadius, WhatIsWall);
 
-        HittingWall = Physics2D.OverlapCircle(EdgeCheck.position, WallCheckRadius, WhatIsWall);
+        HittingWall = Physics2D.OverlapCircle(WallCheck.position, WallCheckRadius, WhatIsWall);
 
         //enemy flip
         if (HittingWall || !NotAtEdge)
