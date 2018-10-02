@@ -8,7 +8,7 @@
       <File FileName="Assets/Scripts/CoinPickUp.cs" Line="7" Column="28" />
       <File FileName="Assets/Scripts/EnemyPatrol.cs" Line="25" Column="47" />
       <File FileName="Assets/Scripts/CheckPoint.cs" Line="26" Column="3" />
-      <File FileName="Assets/Scripts/LevelManager.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/LevelManager.cs" Line="58" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
