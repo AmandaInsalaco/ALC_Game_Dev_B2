@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour {
         StartCoroutine("RespawnPlayerCo");
     }
 
-    public IEnumerable RespawnPlayerCo(){
+    public IEnumerator RespawnPlayerCo(){
         //generate death particle
         //instantiate is creating a game object in our world
         //first part is game object we want to create
