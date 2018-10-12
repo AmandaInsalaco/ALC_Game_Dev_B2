@@ -11,7 +11,7 @@
       <File FileName="Assets/Scripts/KillPlayer.cs" Line="19" Column="18" />
       <File FileName="Assets/Scripts/LevelManager.cs" Line="26" Column="9" />
       <File FileName="Assets/Scripts/PlayerShoot.cs" Line="12" Column="15" />
-      <File FileName="Assets/Scripts/Projectile.cs" Line="17" Column="33" />
+      <File FileName="Assets/Scripts/Projectile.cs" Line="36" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
