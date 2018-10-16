@@ -92,10 +92,11 @@ public class PC_CharMove : MonoBehaviour {
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
         //Player Flip
+        //change the number before f when I change scale
         if (GetComponent<Rigidbody2D>().velocity.x > 0)
             transform.localScale = new Vector3(5f, 5f, 1f);
         else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-            transform.localScale = new Vector3(5f, 5f, 1f);
+            transform.localScale = new Vector3(-5f, 5f, 1f);
 
 
         //Non-Stick Player
