@@ -2135,7 +2135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 825388870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.72, y: -1.53, z: -10.254815}
+  m_LocalPosition: {x: -10.29, y: -1.53, z: -10.254815}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children:
   - {fileID: 1004303402}
@@ -2368,17 +2368,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 921155114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.48, y: -1.18, z: 0}
+  m_LocalPosition: {x: -1.26, y: -0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1396717005}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &937491193 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1929682155066080, guid: 56b0414b8e3fe4f9694e96c5e7cdfade,
-    type: 2}
-  m_PrefabInternal: {fileID: 254277660}
 --- !u!1001 &946036081
 Prefab:
   m_ObjectHideFlags: 0
@@ -3234,7 +3229,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0064
+  m_Mass: 1.5625
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -3266,7 +3261,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.5, y: 2.5}
   m_EdgeRadius: 0
 --- !u!61 &1396717003
 BoxCollider2D:
@@ -3291,7 +3286,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
 --- !u!212 &1396717004
 SpriteRenderer:
@@ -3520,7 +3515,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562086561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.48, y: 0, z: 0}
+  m_LocalPosition: {x: -1.26, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1396717005}
@@ -4067,12 +4062,14 @@ Prefab:
         type: 2}
       propertyPath: EnemyDeath
       value: 
-      objectReference: {fileID: 937491193}
+      objectReference: {fileID: 1338102354994492, guid: bda99e8a55d0b430c9e9db1195722f5a,
+        type: 2}
     - target: {fileID: 114265606913148756, guid: 7193ead4029ed4ac59d37fb15f07a1dc,
         type: 2}
       propertyPath: ProjectileParticle
       value: 
-      objectReference: {fileID: 937491193}
+      objectReference: {fileID: 1701153220594572, guid: ae7b5d58477d34901b3e57e23e109ac0,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7193ead4029ed4ac59d37fb15f07a1dc, type: 2}
   m_IsPrefabParent: 0
