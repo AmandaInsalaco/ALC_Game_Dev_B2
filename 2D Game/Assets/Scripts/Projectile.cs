@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour {
         //same as projectile
         //when we load a prefab, it has to be in a resource folder
         EnemyDeath = Resources.Load("Prefabs/Death_PC") as GameObject;
-        ProjectileParticle = Resources.Load("Prefabs/Respawn_PS") as GameObject;
+        ProjectileParticle = Resources.Load("Prefabs/ProjectileParticle") as GameObject;
         //shoots in the direction the PC is facing
         //do not need braces if you are only using one line
         if (PC.transform.localScale.x < 0)
@@ -45,6 +45,7 @@ public class Projectile : MonoBehaviour {
             Destroy(other.gameObject);
             ScoreManager.AddPoints(PointsForKill);
             Debug.Log("Projectile Hit");
+            Instantiate(ProjectileParticle, transform.position, transform.rotation);
         }
         //the projectile tells player that we hit the enemy
         //is instantiated right where the projectile hits
