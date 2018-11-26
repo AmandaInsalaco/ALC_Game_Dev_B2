@@ -25,8 +25,10 @@ public class LevelManager : MonoBehaviour {
 	void Start () {
         //PC = FindObjectOfType<Rigidbody2D>();
         //finding the object and populating the variable
-        PC = GameObject.Find("PC").GetComponent<Rigidbody2D>();
         PC2 = GameObject.Find("PC");
+        PC = GameObject.Find("PC").GetComponent<Rigidbody2D>();
+        deathParticle = Resources.Load("Prefabs/Death_PC") as GameObject;
+        respawnParticle = Resources.Load("Prefabs/Respawn_PC") as GameObject;
 	}
 	
     //running in the background
@@ -72,6 +74,7 @@ public class LevelManager : MonoBehaviour {
         //PC.enabled = true;
         PC2.SetActive(true);
         PC.GetComponent<Renderer>().enabled = true;
+        PC.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //spawn PC
         Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }

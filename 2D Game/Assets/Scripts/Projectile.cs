@@ -42,10 +42,10 @@ public class Projectile : MonoBehaviour {
         if (other.tag == "Enemy")
         {
             Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
+            Debug.Log("hit enemy");
             Destroy(other.gameObject);
             ScoreManager.AddPoints(PointsForKill);
-            Debug.Log("Projectile Hit");
-            Instantiate(ProjectileParticle, transform.position, transform.rotation);
+
         }
         //the projectile tells player that we hit the enemy
         //is instantiated right where the projectile hits
