@@ -17,8 +17,9 @@ public class Projectile : MonoBehaviour {
         //enemydeath particle goes into a resource folder as a gameobject
         //same as projectile
         //when we load a prefab, it has to be in a resource folder
-        EnemyDeath = Resources.Load("Prefabs/Death_PC") as GameObject;
-        ProjectileParticle = Resources.Load("Prefabs/ProjectileParticle") as GameObject;
+        EnemyDeath = Resources.Load("Prefabs/Death_PS") as GameObject;
+        //ProjectileParticle = Resources.Load("Prefabs/ProjectileParticle") as GameObject;
+        ProjectileParticle = Resources.Load("Prefabs/Respawn_PS") as GameObject;
         //shoots in the direction the PC is facing
         //do not need braces if you are only using one line
         if (PC.transform.localScale.x < 0)

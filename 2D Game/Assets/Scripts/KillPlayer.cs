@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour {
 
-    public LevelManager levelManager;
+    public LevelManager LevelManager;
 
     // Use this for initialization
 	void Start () {
-        levelManager = FindObjectOfType<LevelManager>();
+        LevelManager = FindObjectOfType<LevelManager>();
 	}
 	
     //kills player when passes through collider
@@ -16,7 +16,7 @@ public class KillPlayer : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
         if(other.name == "PC"){
-            levelManager.RespawnPlayer();
+            LevelManager.RespawnPlayer();
             Debug.Log("PC touches Enemy");
         }
 	}

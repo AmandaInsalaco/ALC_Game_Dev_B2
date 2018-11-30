@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4609722917845394}
   - component: {fileID: 198873647906262688}
+  - component: {fileID: 114225857673818588}
   - component: {fileID: 199061010030714334}
   m_Layer: 0
   m_Name: Respawn_PS
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114225857673818588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602687190271956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351b28dc495fe4a42826936353563d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198873647906262688
 ParticleSystem:
   m_ObjectHideFlags: 1

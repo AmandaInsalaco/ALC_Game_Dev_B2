@@ -27,8 +27,8 @@ public class LevelManager : MonoBehaviour {
         //finding the object and populating the variable
         PC2 = GameObject.Find("PC");
         PC = GameObject.Find("PC").GetComponent<Rigidbody2D>();
-        deathParticle = Resources.Load("Prefabs/Death_PC") as GameObject;
-        respawnParticle = Resources.Load("Prefabs/Respawn_PC") as GameObject;
+        deathParticle = Resources.Load("Prefabs/Death_PS") as GameObject;
+        respawnParticle = Resources.Load("Prefabs/Respawn_PS") as GameObject;
 	}
 	
     //running in the background
