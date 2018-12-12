@@ -21,6 +21,9 @@ public class LevelManager : MonoBehaviour {
     //Store Gravity Value
     private float gravityStore;
 
+    //animations
+    public Animator animator;
+
     // Use this for initialization
 	void Start () {
         //PC = FindObjectOfType<Rigidbody2D>();
@@ -43,6 +46,9 @@ public class LevelManager : MonoBehaviour {
         //next spot is where we want it to be created
         //third spot is transformation and rotation
         Instantiate(deathParticle, PC.transform.position, PC.transform.rotation);
+
+        //animator.SetBool("isDeath", true);
+
         //Hide PC
         //PC.enabled = false;
         PC2.SetActive(false);

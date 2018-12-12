@@ -24,9 +24,14 @@ public class PC_CharMove : MonoBehaviour {
     //Non-Stick Player
     private float moveVelocity;
 
+    //animations
+    public Animator animator;
+
 	// Use this for initialization
 	void Start () {
-		
+        //animation reset
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isJumping", false);
 	}
 
     //void means no return type for method
@@ -46,17 +51,21 @@ public class PC_CharMove : MonoBehaviour {
         if (Input.GetKeyDown (KeyCode.Space) && grounded)
         {
             Jump();
+            animator.SetBool("isJumping", true);
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
             Jump();
+            animator.SetBool("isJumping", true);
         }
 
         //double jump
+        //every time PC touches ground, resets animation
         if (grounded)
         {
             doubleJump = false;
+            animator.SetBool("isJumping", false);
         }
 
         if (Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !grounded)
@@ -70,22 +79,40 @@ public class PC_CharMove : MonoBehaviour {
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = MoveSpeed;
+            animator.SetBool("isWalking", true);
+        }
+        else if(Input.GetKeyUp (KeyCode.D)){
+            animator.SetBool("isWalking", false);
         }
         if (Input.GetKey(KeyCode.A))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = -MoveSpeed;
+            animator.SetBool("isWalking", true);
         }
-
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("isWalking", false);
+        }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = MoveSpeed;
+            animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            animator.SetBool("isWalking", false);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             //GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveVelocity = -MoveSpeed;
+                animator.SetBool("isWalking", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            animator.SetBool("isWalking", false);
         }
 
 
@@ -108,5 +135,6 @@ public class PC_CharMove : MonoBehaviour {
     public void Jump()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
+        animator.SetBool("isJumping", true);
     }
 }

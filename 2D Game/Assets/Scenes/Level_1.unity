@@ -2498,6 +2498,11 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0.479
       objectReference: {fileID: 0}
+    - target: {fileID: 114371479254994484, guid: 007b6c2181db74e56bb8711553560eec,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 370639587}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 007b6c2181db74e56bb8711553560eec, type: 2}
   m_IsPrefabParent: 0
@@ -5511,6 +5516,11 @@ Transform:
 --- !u!1 &370639586 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1209681431840048, guid: 007b6c2181db74e56bb8711553560eec,
+    type: 2}
+  m_PrefabInternal: {fileID: 162931125}
+--- !u!95 &370639587 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95282010118985868, guid: 007b6c2181db74e56bb8711553560eec,
     type: 2}
   m_PrefabInternal: {fileID: 162931125}
 --- !u!1 &372355124

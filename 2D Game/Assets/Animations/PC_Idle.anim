@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PC_Walk
+  m_Name: PC_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,15 +20,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: e2f90ef1a605b441790cff114dc307d4, type: 3}
-    - time: 0.16666667
-      value: {fileID: 21300000, guid: fb0e79afc5976452b88e2157512b5763, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: bcfd33af811da45a3abf7849736f1155, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 12
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,14 +40,12 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: e2f90ef1a605b441790cff114dc307d4, type: 3}
-    - {fileID: 21300000, guid: fb0e79afc5976452b88e2157512b5763, type: 3}
-    - {fileID: 21300000, guid: bcfd33af811da45a3abf7849736f1155, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4166667
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
