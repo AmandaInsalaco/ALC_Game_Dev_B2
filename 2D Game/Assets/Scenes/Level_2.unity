@@ -2632,6 +2632,7 @@ MonoBehaviour:
   respawnParticle: {fileID: 0}
   respawnDely: 1
   pointPenaltyOnDeath: 50
+  animator: {fileID: 0}
 --- !u!4 &226442622
 Transform:
   m_ObjectHideFlags: 0
@@ -10644,6 +10645,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1209681431840048, guid: 007b6c2181db74e56bb8711553560eec,
     type: 2}
   m_PrefabInternal: {fileID: 1259863868}
+--- !u!95 &930757289 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95282010118985868, guid: 007b6c2181db74e56bb8711553560eec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1259863868}
 --- !u!1 &948475802
 GameObject:
   m_ObjectHideFlags: 0
@@ -14007,6 +14013,11 @@ Prefab:
       propertyPath: grounded
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114371479254994484, guid: 007b6c2181db74e56bb8711553560eec,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 930757289}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 007b6c2181db74e56bb8711553560eec, type: 2}
   m_IsPrefabParent: 0
@@ -15300,6 +15311,7 @@ MonoBehaviour:
     type: 2}
   respawnDely: 1
   pointPenaltyOnDeath: 20
+  animator: {fileID: 0}
 --- !u!4 &1366456428
 Transform:
   m_ObjectHideFlags: 0
