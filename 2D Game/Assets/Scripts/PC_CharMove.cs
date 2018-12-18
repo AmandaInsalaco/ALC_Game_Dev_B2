@@ -53,6 +53,11 @@ public class PC_CharMove : MonoBehaviour {
             Jump();
             animator.SetBool("isJumping", true);
         }
+        if (Input.GetKeyDown(KeyCode.W) && grounded)
+        {
+            Jump();
+            animator.SetBool("isJumping", true);
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
@@ -73,7 +78,11 @@ public class PC_CharMove : MonoBehaviour {
             Jump();
             doubleJump = true;
         }
-
+        if (Input.GetKeyDown(KeyCode.W) && !doubleJump && !grounded)
+        {
+            Jump();
+            doubleJump = true;
+        }
         //This code makes the char move from side to side
         if (Input.GetKey (KeyCode.D))
         {
