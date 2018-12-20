@@ -2,6 +2,8 @@
 using UnityEngine;
 using System.Collections;
 
+
+
 public class CoinPickUp : MonoBehaviour {
 
     public int pointsToAdd;
@@ -12,6 +14,7 @@ public class CoinPickUp : MonoBehaviour {
             return;
 
         ScoreManager.AddPoints (pointsToAdd);
+
 
         Destroy (gameObject);
 	}

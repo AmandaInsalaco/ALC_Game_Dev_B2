@@ -958,7 +958,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "     moves left\n     moves right\n     shoot\n      once to jump \n            double
+  m_Text: "     moves left\n     moves right\n     shoot\n      jump \n            double
     jump"
 --- !u!222 &1998603271
 CanvasRenderer:

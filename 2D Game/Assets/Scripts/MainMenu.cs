@@ -22,5 +22,6 @@ public class MainMenu : MonoBehaviour {
     //Exits out of the game
     public void LevelExit(){
         Application.Quit();
+        Debug.Log("application quit");
     }
 }
