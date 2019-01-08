@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 95282010118985868}
   m_Layer: 0
   m_Name: PC
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,6 +204,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   grounded: 0
+  animator: {fileID: 0}
 --- !u!212 &212623292620532436
 SpriteRenderer:
   m_ObjectHideFlags: 1

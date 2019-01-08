@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{3BD99DA7-BD93-6366-344B-4F2C33A41684}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelControl.cs">
     <Files>
       <File FileName="Assets/Scripts/PC_CharMove.cs" Line="83" Column="20" />
       <File FileName="Assets/Scripts/ScoreManager.cs" Line="28" Column="13" />
@@ -14,6 +14,7 @@
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="20" Column="53" />
       <File FileName="Assets/Scripts/DestroyFinishedParticles.cs" Line="27" Column="1" />
       <File FileName="Assets/Scripts/MainMenu.cs" Line="26" Column="6" />
+      <File FileName="Assets/Scripts/LevelControl.cs" Line="15" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

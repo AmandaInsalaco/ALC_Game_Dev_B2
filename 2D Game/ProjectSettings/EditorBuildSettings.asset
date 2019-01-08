@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_3.unity
     guid: cc0887fb039d141fcbf144f170174903
+  - enabled: 1
+    path: Assets/Scenes/WIN.unity
+    guid: c40be8c7281274bd7a3522c41c80462c
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/69083516954eb49edb3848e297331a01
+    guid: 69083516954eb49edb3848e297331a01
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
