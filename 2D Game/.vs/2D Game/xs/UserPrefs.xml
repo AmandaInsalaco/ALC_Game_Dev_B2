@@ -14,7 +14,7 @@
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="20" Column="53" />
       <File FileName="Assets/Scripts/DestroyFinishedParticles.cs" Line="27" Column="1" />
       <File FileName="Assets/Scripts/MainMenu.cs" Line="26" Column="6" />
-      <File FileName="Assets/Scripts/LevelControl.cs" Line="15" Column="3" />
+      <File FileName="Assets/Scripts/LevelControl.cs" Line="19" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

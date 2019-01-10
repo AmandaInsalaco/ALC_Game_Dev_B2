@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour {
     public GameObject respawnParticle;
 
     //Respawn Delay
-    public float respawnDely;
+    public float respawnDelay;
 
     //Point Penalty on Death
     public int pointPenaltyOnDeath;
@@ -56,7 +56,8 @@ public class LevelManager : MonoBehaviour {
         //Hide Player
         //use this as a smoke and mirrors effect while we move the player
         //PC.enabled = false;
-        PC.GetComponent<Renderer>().enabled = false;
+        //gravityStore = PC.GetComponent<Rigidbody2D>().gravityScale;
+        //PC.GetComponent<Renderer>().enabled = false;
         //gravity Reset
         //with rigidy body there's velocity, a PC has the same 
         //velocity that it had when it dies, so we need to reset
@@ -69,7 +70,7 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Player Respawn");
         //respawn delay
         //pause so that you don't insatntly reappear
-        yield return new WaitForSeconds(respawnDely);
+        yield return new WaitForSeconds(respawnDelay);
         //Gravity Restore
         //took away the gravity and now we are restoring it
         PC.GetComponent<Rigidbody2D>().gravityScale = gravityStore;
@@ -80,7 +81,7 @@ public class LevelManager : MonoBehaviour {
         //PC.enabled = true;
         PC2.SetActive(true);
         PC.GetComponent<Renderer>().enabled = true;
-        PC.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        //PC.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //spawn PC
         Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }

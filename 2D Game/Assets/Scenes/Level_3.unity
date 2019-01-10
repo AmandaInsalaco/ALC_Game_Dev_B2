@@ -1863,7 +1863,7 @@ MonoBehaviour:
     type: 2}
   respawnParticle: {fileID: 1602687190271956, guid: a718bedefae4644a48f57751b509c62f,
     type: 2}
-  respawnDely: 1
+  respawnDelay: 0
   pointPenaltyOnDeath: 20
   animator: {fileID: 0}
 --- !u!4 &75890257
@@ -2480,7 +2480,6 @@ GameObject:
   m_Component:
   - component: {fileID: 108108065}
   - component: {fileID: 108108064}
-  - component: {fileID: 108108063}
   - component: {fileID: 108108062}
   m_Layer: 0
   m_Name: CandyDeath_R2 (5)
@@ -2501,17 +2500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &108108063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 108108061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &108108064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2999,7 +2987,6 @@ GameObject:
   m_Component:
   - component: {fileID: 119341988}
   - component: {fileID: 119341987}
-  - component: {fileID: 119341986}
   - component: {fileID: 119341985}
   m_Layer: 0
   m_Name: CandyDeath_R2 (3)
@@ -3020,17 +3007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &119341986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 119341984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &119341987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4513,6 +4489,7 @@ MonoBehaviour:
   levelToLoad: 2
   instToLoad: 1
   menueToLoad: 0
+  creditsToLoad: 0
 --- !u!4 &179196870
 Transform:
   m_ObjectHideFlags: 0
@@ -7315,7 +7292,6 @@ GameObject:
   m_Component:
   - component: {fileID: 282690567}
   - component: {fileID: 282690566}
-  - component: {fileID: 282690565}
   - component: {fileID: 282690564}
   m_Layer: 0
   m_Name: CandyDeath_R2 (9)
@@ -7336,17 +7312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &282690565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282690563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &282690566
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8749,7 +8714,6 @@ GameObject:
   m_Component:
   - component: {fileID: 342978543}
   - component: {fileID: 342978542}
-  - component: {fileID: 342978541}
   - component: {fileID: 342978540}
   m_Layer: 0
   m_Name: CandyDeath_R2 (4)
@@ -8770,17 +8734,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &342978541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 342978539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &342978542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12387,6 +12340,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 524725052}
+  - component: {fileID: 524725053}
   m_Layer: 8
   m_Name: CandyDeath_R2 (1)
   m_TagString: Untagged
@@ -12414,6 +12368,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524725053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524725051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2025242d323404691bef692420f77799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelManager: {fileID: 0}
 --- !u!1 &528383614
 GameObject:
   m_ObjectHideFlags: 0
@@ -12571,7 +12537,6 @@ GameObject:
   m_Component:
   - component: {fileID: 530314694}
   - component: {fileID: 530314693}
-  - component: {fileID: 530314692}
   - component: {fileID: 530314691}
   m_Layer: 0
   m_Name: CandyDeath_R2 (8)
@@ -12592,17 +12557,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &530314692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530314690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &530314693
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15165,6 +15119,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 667733370}
+  - component: {fileID: 667733371}
   m_Layer: 8
   m_Name: CandyDeath_R1
   m_TagString: Untagged
@@ -15194,6 +15149,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667733371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667733369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2025242d323404691bef692420f77799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelManager: {fileID: 0}
 --- !u!1 &671045999
 GameObject:
   m_ObjectHideFlags: 0
@@ -23189,7 +23156,6 @@ GameObject:
   m_Component:
   - component: {fileID: 986965818}
   - component: {fileID: 986965817}
-  - component: {fileID: 986965816}
   - component: {fileID: 986965815}
   m_Layer: 0
   m_Name: CandyDeath_R2 (2)
@@ -23210,17 +23176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &986965816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 986965814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &986965817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30330,7 +30285,7 @@ MonoBehaviour:
   PC2: {fileID: 0}
   deathParticle: {fileID: 0}
   respawnParticle: {fileID: 0}
-  respawnDely: 1
+  respawnDelay: 0
   pointPenaltyOnDeath: 50
   animator: {fileID: 0}
 --- !u!4 &1308591797
@@ -30437,7 +30392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4069553140348778, guid: 9baed2b8dd5ce47309d7da9f3a5a12e0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9.717325
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4069553140348778, guid: 9baed2b8dd5ce47309d7da9f3a5a12e0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -31653,7 +31608,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1357002579}
   - component: {fileID: 1357002578}
-  - component: {fileID: 1357002577}
   - component: {fileID: 1357002576}
   m_Layer: 0
   m_Name: CandyDeath_R2 (6)
@@ -31674,17 +31628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &1357002577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357002575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1357002578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34866,6 +34809,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1483634492}
+  - component: {fileID: 1483634493}
   m_Layer: 8
   m_Name: CandyDeath_R2
   m_TagString: Untagged
@@ -34899,6 +34843,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483634493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483634491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2025242d323404691bef692420f77799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelManager: {fileID: 0}
 --- !u!1 &1483805883
 GameObject:
   m_ObjectHideFlags: 0
@@ -38386,6 +38342,7 @@ MonoBehaviour:
   levelToLoad: 2
   instToLoad: 1
   menueToLoad: 0
+  creditsToLoad: 0
 --- !u!4 &1674760390
 Transform:
   m_ObjectHideFlags: 0
@@ -40610,7 +40567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1764515609}
   - component: {fileID: 1764515608}
-  - component: {fileID: 1764515607}
   - component: {fileID: 1764515606}
   m_Layer: 0
   m_Name: CandyDeath_R2 (7)
@@ -40631,17 +40587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
---- !u!114 &1764515607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1764515605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f3b13ac3cac486198a5358cd00aa0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1764515608
 BoxCollider2D:
   m_ObjectHideFlags: 0
